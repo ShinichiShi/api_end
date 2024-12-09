@@ -8,5 +8,17 @@ import (
 )
 
 func main(){
-	
+	log.SetReportCaller(true)//setup logger..so tht u get file and line no.
+	var r *chi.Mux = chi.NewRouter()//pointer to mux type....which is struct to handle api
+	handlers.Handler(r)
+	fmt.Println("Starting go trial api service")
+	fmt.Println(`
+	|||||||||
+	Go apiiii
+	|||||||||
+	`)
+	err:=http.ListenAndServe("localhost:8000",r)//handler which our mux type satisfies
+	if err!=nil{
+			log.Error(err)
+	}
 }
