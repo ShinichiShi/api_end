@@ -3,7 +3,7 @@ import (
 	"fmt"
 	"net/http"
 	"github.com/go-chi/chi"
-	"github.com/ShinichiShi/lessGO/internal/handlers"
+	"github.com/ShinichiShi/api_end/internal/handlers"
 	log "github.com/sirupsen/logrus"
 )
 

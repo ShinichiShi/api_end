@@ -2,7 +2,7 @@ package handlers
 import (
 	"github.com/go-chi/chi"
 	chimiddle"github/com/go-chi/chi.middleware"
-	"github.com/ShinichiShi/lessGO/internal/middleware"
+	"github.com/ShinichiShi/api_end/internal/middleware"
 )
 
 func Handler(r *chi.Mux){//handles the mux type juz created
