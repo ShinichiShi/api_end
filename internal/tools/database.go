@@ -2,7 +2,7 @@ package tools
 import 	log "github.com/sirupsen/logrus"
 
 
-type loginDetails struct{
+type LoginDetails struct{
 	AuthToken string
 	Username string
 }
@@ -13,7 +13,7 @@ type CoinDetails struct{
 }
 
 type DatabaseInterface interface{
-	GetUserLoginDetails(username string) *loginDetails
+	GetUserLoginDetails(username string) *LoginDetails
 	GetUserCoins(username string) *CoinDetails
 	SetupDatabase() error
 }

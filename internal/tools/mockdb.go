@@ -2,7 +2,7 @@ package tools
 import "time"
 
 type mockdb struct{}
-var mockLoginDetails = map[string]loginDetails{
+var mockLoginDetails = map[string]LoginDetails{
 	"alex":{
 		AuthToken:"1234",
 		Username:"alex",
@@ -23,9 +23,9 @@ var MockCoinDetails = map[string]CoinDetails{
 		Username:"bob",
 	},
 }
-func (d *mockdb) GetUserLoginDetails(username string) *loginDetails{
+func (d *mockdb) GetUserLoginDetails(username string) *LoginDetails{
 	time.Sleep(time.Second+1)
-	var clientData = loginDetails{}
+	var clientData = LoginDetails{}
 	clientData,ok :=mockLoginDetails[username]
 	if !ok{
 		return nil

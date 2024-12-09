@@ -6,14 +6,12 @@ import (
 
 	"github.com/ShinichiShi/api_end/api"
 	"github.com/ShinichiShi/api_end/internal/tools"
-	"github.com/gorilla.schema"
-	"github.com/shinichishi/api_end/api"
-	"github.com/shinichishi/api_end/internal/tools"
+	"github.com/gorilla/schema"
 	log "github.com/sirupsen/logrus"
 )
 func GetCoinBalance( w http.ResponseWriter, r *http.Request){
 	var params = api.CoinBalanceParams{}
-	var decoder *schema.Decoder = schema.newDecoder()
+	var decoder *schema.Decoder = schema.NewDecoder()
 	var err error
 	err = decoder.Decode(&params, r.URL.Query())
 	if err != nil {

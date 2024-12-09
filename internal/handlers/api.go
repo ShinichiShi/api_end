@@ -1,7 +1,7 @@
 package handlers
 import (
 	"github.com/go-chi/chi"
-	chimiddle"github/com/go-chi/chi.middleware"
+	chimiddle "github.com/go-chi/chi/middleware"
 	"github.com/ShinichiShi/api_end/internal/middleware"
 )
 
