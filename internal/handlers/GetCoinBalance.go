@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ShinichiShi/lessGO.git/api"
-	"github.com/ShinichiShi/lessGO.git/internal/tools"
+	"github.com/ShinichiShi/api_end/api"
+	"github.com/ShinichiShi/api_end/internal/tools"
 	"github.com/gorilla.schema"
 	"github.com/shinichishi/api_end/api"
 	"github.com/shinichishi/api_end/internal/tools"

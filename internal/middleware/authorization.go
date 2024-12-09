@@ -3,8 +3,8 @@ package middleware
 import (
 	"errors"
 	"net/http"
-	"github.com/ShinichiShi/lessGO/api"
-	"github.com/ShinichiShi/lessGO/internal/tools"
+	"github.com/ShinichiShi/api_end/api"
+	"github.com/ShinichiShi/api_end/internal/tools"
 	log "github.com/sirupsen/logrus"
 )
 var UnAuthorizedError = errors.New("Invalid Username or token")
