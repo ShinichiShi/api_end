@@ -1,4 +1,4 @@
-module github.com/ShinichiShi/lessGO.git
+module github.com/ShinichiShi/api_end.git
 
 go 1.23.4
 
