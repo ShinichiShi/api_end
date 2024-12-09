@@ -1,0 +1,26 @@
+creating a api endpoint where v display the user amt of coins he has in his acc
+
+golang project structure
+https://github.com/golang-standards/project-layout
+/cmd : Main applications for this project.
+
+/internal : Private application and library code. This is the code you don't want others importing in their applications or libraries. 
+/pkg
+/vendor
+/api : Service Application Directories : OpenAPI/Swagger specs, JSON schema files, protocol definition files.
+/web
+/configs
+/init
+/scripts
+/build
+/deployments
+/test
+/docs
+/tools
+/examples
+/third_party
+/githooks
+/assets
+/website
+Directories You Shouldn't Have
+/src
